@@ -32,7 +32,7 @@ public class HyperbolaAdapterFactory implements IAdapterFactory {
 	
 	@Override
 	public Object getAdapter(Object adaptableObject, Class adapterType) {
-		return (adapterType == ContactsGroup.class && adaptableObject instanceof ContactsGroup ? groupAdapter : null);
+		return (adapterType == IWorkbenchAdapter.class && adaptableObject instanceof ContactsGroup ? groupAdapter : null);
 	}
 
 	@Override
