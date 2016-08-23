@@ -20,7 +20,8 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
         IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
         configurer.setInitialSize(new Point(400, 300));
         configurer.setShowCoolBar(false);
-        configurer.setShowStatusLine(false);
+        configurer.setShowStatusLine(true);
         configurer.setTitle("Hello RCP!"); //$NON-NLS-1$
+        configurer.setShowMenuBar(true);
     }
 }
